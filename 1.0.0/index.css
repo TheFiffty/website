@@ -7,17 +7,16 @@ body
 /* Image d'accueil */
 #cadre_img_accueil
 {
-  width: auto;
-  height: auto;
+  /* border: 10px solid white; */
 }
 
-#img.accueil 
+#img-accueil 
 {
-  border: 5% solid white;
-  width: auto;
-  height: auto;
-  opacity: 50% red;
-
+  border: 10px solid white;
+  /* opacity: 50% red; */
+  /* max-width: 50%; */
+  width: 100%;
+  box-sizing: border-box;
 } 
 
 
