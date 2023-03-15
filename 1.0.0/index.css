@@ -1,0 +1,28 @@
+/* body */
+body 
+{
+  background-color: yellow;
+}
+
+/* Image d'accueil */
+#cadre_img_accueil
+{
+  width: auto;
+  height: auto;
+}
+
+#img.accueil 
+{
+  border: 5% solid white;
+  width: auto;
+  height: auto;
+  opacity: 50% red;
+
+} 
+
+
+
+
+
+
+
