@@ -2,7 +2,7 @@
 body 
 {
   background-color: white;
-  
+
 }
 body, html 
 {
@@ -14,12 +14,19 @@ body, html
 /* Image d'accueil */
 #cadre_img_accueil 
 {
-
+  position: relative;
+  margin: 0;
+  padding: 0; 
 
 }
 #overlay_img_accueil 
 {
-
+  position: fixed;
+  width: var(--wF);
+  height: var(--hF);
+  background-color: rgba(255, 0, 0); 
+  opacity:60%;
+  z-index: 1;
 
 }
 #img-accueil 
