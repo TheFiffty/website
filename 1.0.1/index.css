@@ -2,10 +2,13 @@
 body 
 {
   background-color: white;
+  
 }
 body, html 
 {
- 
+  margin: 0;
+  padding: 0;
+
 }
 
 /* Image d'accueil */
@@ -24,7 +27,7 @@ body, html
   width: var(--wF);
   height: var(--hF);
   overflow: hidden;
-  position: absolute;
+  position: fixed;
 
 }
 
