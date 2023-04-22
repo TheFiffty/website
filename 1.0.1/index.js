@@ -46,3 +46,4 @@ window.onresize = function()
   getWindowSize();
 
 };
+
