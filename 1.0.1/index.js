@@ -32,6 +32,10 @@ function getWindowSize()
 
 };
 
+
+
+//---------------------- UTILISATION FONCTIONS ------------------------
+
 //utlilisation des fonctions au chargement
 window.onload = function()
 {

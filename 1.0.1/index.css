@@ -12,7 +12,7 @@ body, html
 
 }
 
-/*--------------------- cacher la scrollbar ---------*/
+/*--------------------- scrollbar ---------*/
 ::-webkit-scrollbar {
   display: none;
 }
@@ -39,6 +39,8 @@ main {
   height: var(--hWindow);
   overflow: hidden; 
   border: 2px solid red;
+  /* height: 100vh;
+  scroll-snap-align: start; */
 
 }
 #img-accueil 
@@ -56,6 +58,15 @@ main {
 {
   display: inline-block;
   overflow: visible;
+}
+#img-accueil1
+{
+  width: var(--wScreen);
+  height: var(--hScreen);
+  overflow: hidden;
+  position: absolute;
+  object-fit: cover;
+
 }
 
 
