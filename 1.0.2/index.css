@@ -91,14 +91,15 @@ main {
   display: inline-block;
   overflow: visible;
 }
-#img-accueil1
-{
-  width: var(--wScreen);
-  height: var(--hScreen);
-  overflow: hidden;
-  position: absolute;
-  object-fit: cover;
-
+#txt_img_accueil {
+  position: absolute; /* Positionnement absolu pour pouvoir placer le texte sur l'image */
+  top: 50%; /* Place le haut du texte à 50% de la hauteur du div parent */
+  left: 50%; /* Place le texte à 50% de la largeur du div parent */
+  transform: translate(-50%, -50%); /* Recentre le texte sur l'image */
+  color: white; /* Couleur du texte */
+  opacity: 0.78;
+  font-size: 300px; /* Taille de la police */
+  text-align: center; /* Alignement du texte */
+  border: 2px solid red;
 }
-
 
