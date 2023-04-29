@@ -32,6 +32,11 @@ function getWindowSize()
 
 };
 
+//scroll de la première page
+// function scroll() {
+//   window.location.href = "#menu-container"; //Your next section
+  
+// }
 
 
 //---------------------- UTILISATION FONCTIONS ------------------------
@@ -51,15 +56,8 @@ window.onresize = function()
 
 };
 
-window.addEventListener('scroll', function() {
-  var menuContainer = document.getElementById('menu-container');
-  var menu = document.getElementById('menu');
-  var imgAccueil = document.getElementById('img-accueil');
-
-  var imgAccueilBottom = imgAccueil.getBoundingClientRect().bottom;
-  if (imgAccueilBottom <= 0) {
-    menuContainer.classList.add('fixed-menu');
-  } else {
-    menuContainer.classList.remove('fixed-menu');
-  }
-});
+//utilisation des fonctions lors de l'event onscroll
+window.onscroll = function()
+{
+  // scroll();
+}

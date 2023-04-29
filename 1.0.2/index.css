@@ -9,10 +9,11 @@ body
 body, html 
 {
   margin: 0;
+  /* scroll-behavior: smooth; */
 
 }
 
-/*--------------------- scrollbar ---------*/
+/*--------------------- scrollbar -------------------*/
 ::-webkit-scrollbar {
   display: none;
 }
@@ -25,15 +26,6 @@ main {
 }
 
 /*--------------------- menu ------------------------*/
-/* #menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  z-index: 1;
-} */
 #menu-container {
   position: relative;
 }
