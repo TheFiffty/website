@@ -9,3 +9,6 @@ version dans laquelle je recommence d'une nouvelle façon celle du dessu du à d
 
 1.0.2
 version in which I added a menu at the end of the first page picture
+
+1.1.0
+version where I added some pages and their folders, and increase the menu
