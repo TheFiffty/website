@@ -38,6 +38,20 @@ function getWindowSize()
   
 // }
 
+window.addEventListener("DOMContentLoaded", function() {
+  var menu = document.getElementById("menu");
+  var image = document.getElementById("cadre_img_accueil");
+
+  window.addEventListener("scroll", function() {
+    if (image && image.getBoundingClientRect().bottom < 0) {
+      menu.classList.add("sticky");
+    } else {
+      menu.classList.remove("sticky");
+    }
+  });
+});
+
+
 
 //---------------------- UTILISATION FONCTIONS ------------------------
 

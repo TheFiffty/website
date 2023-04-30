@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Ms_Madi";
+  src: url("../../fontype/Ms_Madi/MsMadi-Regular.ttf");
+}
+
 /*--------------------- body ------------------------*/
 body 
 {
@@ -38,16 +43,17 @@ main {
   color: #fff;
   z-index: 1;
 }
-.fixed-menu {
+#menu.sticky {
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 #menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 #menu li {
@@ -69,7 +75,7 @@ main {
   width: var(--wWindow);
   height: var(--hWindow);
   overflow: hidden; 
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* height: 100vh;
   scroll-snap-align: start; */
 
@@ -100,7 +106,11 @@ main {
   opacity: 0.78;
   font-size: 20vw; /* size of the font, possible to use 300px too, or 2000% */
   text-align: center; /* Alignement du texte */
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  font-family: "Ms_Madi";
+}
+#txt_img_accueil::first-letter {
+  font-size: 30vw;
 }
 
 
