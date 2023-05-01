@@ -1,6 +1,18 @@
 @font-face {
   font-family: "Ms_Madi";
-  src: url("../../fontype/Ms_Madi/MsMadi-Regular.ttf");
+  src: url("../index/fontype/Ms_Madi/MsMadi-Regular.ttf");
+}
+@font-face {
+  font-family: "Cinzel_Deco_Reg";
+  src: url(../index/fontype/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+}
+@font-face {
+  font-family: "Cinzel_Deco_Black";
+  src: url(../index/fontype/Cinzel_Decorative/CinzelDecorative-Black.ttf);
+}
+@font-face {
+  font-family: "Reey_Reg";
+  src: url(../index/fontype/reey/Reey-Regular.otf);
 }
 
 /*--------------------- body ------------------------*/
@@ -111,6 +123,7 @@ main {
 }
 #txt_img_accueil::first-letter {
   font-size: 30vw;
+  /* font-family: ""; */
 }
 
 
