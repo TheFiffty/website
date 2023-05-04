@@ -115,24 +115,22 @@ main {
   text-align: center; /* Alignement du texte */
   /* border: 2px solid red; */
   font-family: "Ms_Madi";
+
 }
 #txt_img_accueil::first-letter {
   font-size: 30vw;
   /* font-family: ""; */
-}
-#cadre_txt_1
-{
-  border-color: blue;
-  position: absolute;
-  width: var(--wWindow);
-  height: var(--hWindow);
-  overflow: hidden; 
-  padding-top: 40px;
+
 }
 #presentation
 {
   display: inline-block;
   overflow: visible;
+  
+}
+#cadre_txt_main_acc
+{
+  position: absolute !;
 }
 
 
@@ -147,17 +145,25 @@ main {
 footer
 {
   position: absolute;
-  bottom: 0;
   text-align: center;
   width: 100%;
   background-color: #333;
   color: #fff;
   z-index: 1;
-  height: 20px;
+  height: auto;
+
 }
-/* #footer.sticky {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-} */
+#div_footer
+{
+  padding-top: 4px;
+
+}
+#txt_footer
+{
+  color: #fff;
+  font-size: 9.5pt;
+  margin: 0px;
+  padding: 2px;
+
+}
 
