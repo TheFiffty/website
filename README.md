@@ -12,3 +12,6 @@ version in which I added a menu at the end of the first page picture
 
 1.1.0
 version where I added some pages and their folders, and increase the menu
+
+1.1.1
+version where the footer is functional 
