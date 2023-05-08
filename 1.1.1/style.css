@@ -146,6 +146,12 @@ section
   justify-content: center;
 
 }
+#presentation
+{
+  display: inline-block;
+  overflow: visible;
+
+}
 
 /*--------------------- footer ----------------------*/
 footer
