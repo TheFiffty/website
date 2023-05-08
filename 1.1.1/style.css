@@ -130,10 +130,21 @@ main {
 }
 #cadre_txt_main_acc
 {
-  position: absolute;
-  width: var(--wWindow);
-  height: var(--hWindow);
-  overflow: hidden; 
+  position: absolute!;
+}
+html 
+{
+  scroll-snap-type: y mandatory;
+  
+}
+section
+{
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 /*--------------------- footer ----------------------*/
