@@ -15,6 +15,7 @@
   src: url(fontype/reey/Reey-Regular.otf);
 }
 
+
 /*--------------------- body ------------------------*/
 body 
 {
@@ -41,6 +42,7 @@ main {
   max-height: 20000px; 
 
 }
+
 
 /*--------------------- menu ------------------------*/
 #menu {
@@ -78,16 +80,63 @@ main {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
-  transition: all 0.2s ease-in-out;
+  padding: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  /* border: 2px solid red; */
+  /* transition: all 0.2s ease-in-out; */
 
 }
 #menu li a:hover {
-  transform: scale(1.1);
+  transform: scale(1);
+  
+}
+#sub_menu_div{
+  padding: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  border: 2px solid red;
+
+}
+#menu ul ul {
+  position: absolute;
+  top: 100%;
+  left: auto;
+  right: 0;
+  min-width: 200px;
+  background-color: #333;
+  display: none;
+  white-space: nowrap; /* Empêche le texte de revenir à la ligne */
+  padding: 0; /* Supprime le padding pour éviter les espaces inutiles */
+  margin-top: 0; /* Supprime la marge supérieure pour aligner avec le lien parent */
+  
+}
+#menu ul ul li {
+  width: 100%;
+  float: none;
+  position: relative;
+
+}
+#menu ul ul a {
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  white-space: nowrap;
+
+}
+#menu ul ul a:hover {
+  background-color: #333;
+
+}
+#menu ul li:hover > ul {
+  display: block;
 
 }
 
+
 /*--------------------- Page d'accueil --------------*/
-#cadre_img_accueil 
+.cadre_img_accueil 
 {
   width: var(--wWindow);
   height: var(--hWindow);
@@ -96,7 +145,7 @@ main {
 
 
 }
-#img-accueil 
+.img-accueil 
 {
   width: var(--wScreen);
   height: var(--hScreen);
@@ -135,6 +184,13 @@ html {
   scroll-snap-type: y mandatory;
 
 }
+#on_cadre_img_accueil{
+  position: absolute;
+  top: var(--hWindow);
+  left: 0;
+  margin-bottom: 40px;
+
+}
 
 
 /*--------------------- footer ----------------------*/
@@ -163,6 +219,13 @@ footer
   padding: 2px;
 
 }
+#footer.sticky {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+
+}
+
 
 /*--------------------- PICTURES PAGE ---------------*/
 /*--------------------- CV PAGE ---------------------*/

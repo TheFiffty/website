@@ -42,9 +42,9 @@ function getWindowSize()
 //---------------------- Executable  ------------------------
 
 //empeche l'utilisation du clique droit
-document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
-});
+// document.addEventListener('contextmenu', function(e) {
+//   e.preventDefault();
+// });
 
 
 //---------------------- UTILISATION FONCTIONS ------------------------
