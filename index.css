@@ -1,0 +1,46 @@
+/* body */
+body 
+{
+  background-color: white;
+}
+body, html 
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* Image d'accueil */
+#cadre_img_accueil 
+{
+  position: relative;
+  margin: 0;
+  padding: 0;  
+
+}
+#overlay_img_accueil 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+  background-color: rgba(255, 0, 0); 
+  opacity:60%;
+  /* clip-path: inset(0 0 calc(100% - 99.5%) 0); rogner l'image */
+  /* height: calc(100% - 0.5%); */
+
+}
+#img-accueil 
+{
+  width: var(--wF);
+  height: var(--hF);
+  object-fit: cover;
+
+}
+
+
+
+
+
+
+
