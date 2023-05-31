@@ -101,18 +101,19 @@ main {
 #menu ul ul {
   position: absolute;
   top: 100%;
-  left: auto;
-  right: 0;
-  min-width: 200px;
+  left: 85%;
+  right: auto;
+  min-width: auto;
   background-color: #333;
   display: none;
   white-space: nowrap; /* Empêche le texte de revenir à la ligne */
   padding: 0; /* Supprime le padding pour éviter les espaces inutiles */
   margin-top: 0; /* Supprime la marge supérieure pour aligner avec le lien parent */
+  /* border: 2px solid red; */
   
 }
 #menu ul ul li {
-  width: 100%;
+  /* width: 100%; */
   float: none;
   position: relative;
 
@@ -131,6 +132,8 @@ main {
 }
 #menu ul li:hover > ul {
   display: block;
+  border-radius: 5px;
+  
 
 }
 
@@ -188,7 +191,8 @@ html {
   position: absolute;
   top: var(--hWindow);
   left: 0;
-  margin-bottom: 40px;
+  margin-top: 35px;
+  border: 2px solid red;
 
 }
 
