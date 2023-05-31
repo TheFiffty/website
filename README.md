@@ -1,4 +1,4 @@
 # website
-code du site web développé et leurs versions
+Personal website code and the different versions
 
 https://telecram.fr
