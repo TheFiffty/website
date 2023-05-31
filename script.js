@@ -38,22 +38,13 @@ function getWindowSize()
   
 // }
 
-window.addEventListener("DOMContentLoaded", function() {
-  var menu = document.getElementById("menu");
-  var image = document.getElementById("cadre_img_accueil");
-  var foot = document.getElementById("footer");
 
-  window.addEventListener("scroll", function() {
-    if (image && image.getBoundingClientRect().bottom < 0) {
-      menu.classList.add("sticky");
-      // foot.classList.add("sticky");
-    } else {
-      menu.classList.remove("sticky");
-      // foot.classList.add("sticky");
-    }
-  });
-});
+//---------------------- Executable  ------------------------
 
+//empeche l'utilisation du clique droit
+// document.addEventListener('contextmenu', function(e) {
+//   e.preventDefault();
+// });
 
 
 //---------------------- UTILISATION FONCTIONS ------------------------
