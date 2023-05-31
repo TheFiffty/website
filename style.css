@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Ms_Madi";
+  src: url("../index/fontype/Ms_Madi/MsMadi-Regular.ttf");
+}
+@font-face {
+  font-family: "Cinzel_Deco_Reg";
+  src: url(../index/fontype/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+}
+@font-face {
+  font-family: "Cinzel_Deco_Black";
+  src: url(../index/fontype/Cinzel_Decorative/CinzelDecorative-Black.ttf);
+}
+@font-face {
+  font-family: "Reey_Reg";
+  src: url(../index/fontype/reey/Reey-Regular.otf);
+}
+
+/*--------------------- body ------------------------*/
+body 
+{
+  background-color: white;
+  /* overflow: hidden; */
+  padding-right: calc(100vw - 100%);
+
+}
+body, html 
+{
+  margin: 0;
+  /* scroll-behavior: smooth; */
+
+}
+
+/*--------------------- scrollbar -------------------*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*--------------------- main ------------------------*/
+main {
+  overflow: auto;
+  max-height: 20000px; 
+
+}
+
+/*--------------------- menu ------------------------*/
+#menu-container {
+  position: relative;
+}
+#menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  z-index: 1;
+}
+#menu.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu li {
+  padding: 10px;
+}
+#menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+#menu li a:hover {
+  transform: scale(1.1);
+}
+
+/*--------------------- Image d'accueil -------------*/
+#cadre_img_accueil 
+{
+  width: var(--wWindow);
+  height: var(--hWindow);
+  overflow: hidden; 
+  /* border: 2px solid red; */
+  /* height: 100vh;
+  scroll-snap-align: start; */
+
+}
+#img-accueil 
+{
+  width: var(--wScreen);
+  height: var(--hScreen);
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #fff;
+
+}
+#presentation
+{
+  display: inline-block;
+  overflow: visible;
+}
+#txt_img_accueil {
+  position: absolute; /*place the text on the picture*/
+  top: 50%; /* place the top of the text at 50% of the parent */
+  left: 50%; /* same with width */
+  transform: translate(-50%, -50%); /* center the text on the pic */
+  color: white; /* color of the txt */
+  opacity: 0.78;
+  font-size: 20vw; /* size of the font, possible to use 300px too, or 2000% */
+  text-align: center; /* Alignement du texte */
+  /* border: 2px solid red; */
+  font-family: "Ms_Madi";
+}
+#txt_img_accueil::first-letter {
+  font-size: 30vw;
+  /* font-family: ""; */
+}
+
+
+
+
+/*--------------------- PICTURES PAGE ---------------*/
+/*--------------------- CV PAGE ---------------------*/
+/*--------------------- COOKING PAGE ----------------*/
+/*--------------------- DRAWING PAGE ----------------*/
+/*--------------------- PROJECT PAGE ----------------*/
+
+
