@@ -32,6 +32,11 @@ function getWindowSize()
 
 };
 
+//scroll de la première page
+// function scroll() {
+//   window.location.href = "#menu-container"; //Your next section
+  
+// }
 
 
 //---------------------- UTILISATION FONCTIONS ------------------------
@@ -51,3 +56,8 @@ window.onresize = function()
 
 };
 
+//utilisation des fonctions lors de l'event onscroll
+window.onscroll = function()
+{
+  // scroll();
+}

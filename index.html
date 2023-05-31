@@ -1,81 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-	<!-- type de charactères utilisés pour l'affichage -->
-	<meta charset="UTF-8" />
+	<head>
+		<!-- type de charactères utilisés pour l'affichage -->
+		<meta charset="UTF-8" />
 
-	<!-- nom de la page -->
-	<title>Accueil</title>
+		<!-- nom de la page -->
+		<title>Accueil</title>
 
-	<!-- fichiers css -->
-	<link rel="stylesheet" href="index.css"/>
+		<!-- fichiers css -->
+		<link rel="stylesheet" href="index.css"/>
 
-	<!-- fichiers javascript -->
-	<!-- <script defer="defer" src="index.js"></script> -->
-	<script src="index.js"></script>
+		<!-- fichiers javascript -->
+		<!-- <script defer="defer" src="index.js"></script> -->
+		<script src="index.js"></script>
 
-	<!-- fichier de l'icone de la page -->
-	<!-- <link rel="icon" href="./favicon.ico"> -->
-	
+		<!-- fichier de l'icone de la page -->
+		<!-- <link rel="icon" href="./favicon.ico"> -->
 
-</head>
 
-<body>
+	</head>
 
-	<!-- scripts de la page -->
-	
+	<body>
+		<!-- script de la Page -->
 
-  <header>
-    <!-- Contenu de l'en-tête -->
+		<script type="text/javascript">
+			function scrollWin() {
+				//Logic to find the next section......
+				//........
+				window.location.href = "#menu-container"; //Your next section
+			}
+		</script>
 
-		<!-- menu -->
-		<!-- <div id="menu"> -->
-			
-		</div>
+		<!-- contenu de la page -->
 
-  </header>
+			<div id="oneScrollContainer">
+				<!-- image d'accueil-->
+				
+				<div id="cadre_img_accueil" window.onscroll="scrollWin()">
+					<img src="../fond/IMG_9889_c.jpeg" alt="image accueil" id="img-accueil">
+				</div>
+				
+				<div id="txt_img_accueil">
+					<p id="txt_img_acc">Telecram</p>
+				</div>
 
-  <main>
-    <!-- Contenu principal de la page -->
+			</div>
 
-		<div id="oneScrollContainer">
+			<div id="menu-container">
+				<div id="menu">
+					<ul>
+						<li><a href="#home">Accueil</a></li>
+						<li><a href="#page1">Page 1</a></li>
+						<li><a href="#page2">Page 2</a></li>
+					</ul>
+				</div>
+			</div>
 
-			<!-- image d'accueil-->
 			<div id="cadre_img_accueil">
-				<img src="../fond/IMG_0127_copie.png" alt="image accueil" id="img-accueil">
+				<div id="presentation">
+					<p>
+							jhj2
+					</p>
+				</div>
 			</div>
 
-		</div>
-
-		<div id="cadre_img_accueil">
-			<div id="presentation">
-				<p>
-						jhj
-				</p>
+			<div id="cadre_img_accueil">
+				<div id="presentation">
+					<p>
+							jhj2
+					</p>
+				</div>
 			</div>
-		</div>
-		
-		<div id="cadre_img_accueil">
-			<div id="presentation">
-				<p>
-						jhj2
-				</p>
+
+			<div id="cadre_img_accueil">
+				<div id="presentation">
+					<p>
+							jhj2
+					</p>
+				</div>
 			</div>
-		</div>
+
+			<div id="cadre_img_accueil">
+				<div id="presentation">
+					<p>
+							jhj2
+					</p>
+				</div>
+			</div>
+
+
+	  </main>
+
+	  <footer>
+	    <!-- Contenu du pied de page -->
+
+			<p>Ce site web a été créé par moi.</p>
+
+	  </footer>
 
 
 
-  </main>
-
-  <footer>
-    <!-- Contenu du pied de page -->
-
-
-  </footer>
-
-	
-
-</body>
+	</body>
 
 </html>
