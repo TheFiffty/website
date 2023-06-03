@@ -24,10 +24,21 @@ function getWindowSize()
 };
 
 //scroll de la première page
-// function scroll() {
-//   window.location.href = "#menu-container"; //Your next section
+function dealWithFirstPage()
+{
+  var image = document.querySelector(".cadre_img_accueil .img-accueil");
+  var imagePosition = image.getBoundingClientRect().top;
+  var windowHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hScreen'));
   
-// }
+  if (imagePosition < windowHeight && window.scrollY > 0) {
+      image.classList.add("hidden");
+      image.classList.remove("visible");
+  } else {
+      image.classList.remove("hidden");
+      image.classList.add("visible");
+  }
+  // if (imagePosition > windowHeight && window.scrollY < 0)
+};
 
 
 //---------------------- EXECUTABLES  ------------------------
@@ -36,26 +47,6 @@ function getWindowSize()
 // document.addEventListener('contextmenu', function(e) {
 //   e.preventDefault();
 // });
-
-//disparition de l'image en un scroll
-window.addEventListener("scroll", function() {
-		var image = document.querySelector(".cadre_img_accueil .img-accueil");
-		var imagePosition = image.getBoundingClientRect().top;
-		var windowHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hScreen'));
-    
-		if (imagePosition < windowHeight && window.scrollY > 0) {
-				image.classList.add("hidden");
-        image.classList.remove("visible");
-		} else {
-				image.classList.remove("hidden");
-        image.classList.add("visible");
-		}
-    // if (imagePosition > windowHeight && window.scrollY < 0)
-<<<<<<< HEAD
-});
-=======
-}); 
->>>>>>> e093e41 (new plan for first page)
 
 
 //---------------------- UTILISATION FONCTIONS ---------------
@@ -78,5 +69,5 @@ window.onresize = function()
 //utilisation des fonctions lors de l'event onscroll
 window.onscroll = function()
 {
-  // scroll();
+  dealWithFirstPage();
 }
