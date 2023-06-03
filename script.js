@@ -51,7 +51,11 @@ window.addEventListener("scroll", function() {
         image.classList.add("visible");
 		}
     // if (imagePosition > windowHeight && window.scrollY < 0)
+<<<<<<< HEAD
 });
+=======
+}); 
+>>>>>>> e093e41 (new plan for first page)
 
 
 //---------------------- UTILISATION FONCTIONS ---------------
