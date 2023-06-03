@@ -33,6 +33,19 @@
 			
 			<div class="cadre_img_accueil">
 				<img src="background_pictures/IMG_9889_c.jpeg" alt="image accueil" class="img-accueil">
+				<script>
+					window.addEventListener("scroll", function() {
+							var image = document.querySelector(".cadre_img_accueil .img-accueil");
+							var imagePosition = image.getBoundingClientRect().top;
+							var windowHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hScreen'));
+			
+							if (imagePosition < windowHeight) {
+									image.classList.add("hidden");
+							} else {
+									image.classList.remove("hidden");
+							}
+					});
+			</script>
 			</div>
 				
 			<div id="txt_img_accueil">
@@ -111,7 +124,7 @@
 					azertyuiop 12
 				</p>
 
-				<!-- <p>
+				<p>
 					azertyuiop 13
 				</p>
 
@@ -145,7 +158,7 @@
 
 				<p>
 					azertyuiop 22
-				</p> -->
+				</p>
 
 			</div>
 
