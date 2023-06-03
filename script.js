@@ -38,17 +38,20 @@ function getWindowSize()
 // });
 
 //disparition de l'image en un scroll
-// window.addEventListener("scroll", function() {
-//   var image = document.getElementsByClassName("img-accueil");
-//   var imagePosition = image.getBoundingClientRect().top;
-//   var windowHeight = window.innerHeight;
-
-//   if (imagePosition < windowHeight) {
-//     image.classList.add("hidden");
-//   } else {
-//     image.classList.remove("hidden");
-//   }
-// });
+window.addEventListener("scroll", function() {
+		var image = document.querySelector(".cadre_img_accueil .img-accueil");
+		var imagePosition = image.getBoundingClientRect().top;
+		var windowHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hScreen'));
+    
+		if (imagePosition < windowHeight && window.scrollY > 0) {
+				image.classList.add("hidden");
+        image.classList.remove("visible");
+		} else {
+				image.classList.remove("hidden");
+        image.classList.add("visible");
+		}
+    // if (imagePosition > windowHeight && window.scrollY < 0)
+});
 
 
 //---------------------- UTILISATION FONCTIONS ---------------

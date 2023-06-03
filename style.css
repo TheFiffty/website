@@ -157,15 +157,22 @@ main {
   height: 100%;
   object-fit: cover;
   background-color: #fff;
-
+/* 
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; */
 }
-
+.cadre_img_accueil .img-accueil {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.cadre_img_accueil .img-accueil.visible {
+  opacity: 1;
+  transform: scale(1);
+}
 .img-accueil.hidden {
   opacity: 0;
 }
-
 #txt_img_accueil {
   position: absolute; /*place the text on the picture*/
   top: 50%; /* place the top of the text at 50% of the parent */

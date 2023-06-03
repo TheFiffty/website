@@ -32,19 +32,9 @@
 		<!-- image d'accueil-->
 			
 			<div class="cadre_img_accueil">
-				<img src="background_pictures/IMG_9889_c.jpeg" alt="image accueil" class="img-accueil">
+				<img src="background_pictures/IMG_9889_c.jpeg" alt="image accueil" class="img-accueil visible">
 				<script>
-					window.addEventListener("scroll", function() {
-							var image = document.querySelector(".cadre_img_accueil .img-accueil");
-							var imagePosition = image.getBoundingClientRect().top;
-							var windowHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hScreen'));
-			
-							if (imagePosition < windowHeight) {
-									image.classList.add("hidden");
-							} else {
-									image.classList.remove("hidden");
-							}
-					});
+					
 			</script>
 			</div>
 				
