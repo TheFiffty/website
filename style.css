@@ -20,7 +20,6 @@
 body 
 {
   background-color: white;
-  /* overflow: hidden; */
   padding-right: calc(100vw - 100%);
 
 }
@@ -46,109 +45,88 @@ main {
 
 /*--------------------- menu ------------------------*/
 #menu {
-  position: relative;
-  top: 100%;
-  left: 0;
+  /* top: 100%;
+  left: 0; */
   width: 100%;
-  margin: 0px;
-  background-color: #333;
-  color: #fff;
-  z-index: 1;
-  /* border: 2px solid red; */
-
-}
-#menu.sticky {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-
-}
-#menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  background-color: #333;
+  color: #fff;
+}
+.scrolly{
+  position: relative;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 #menu li {
-  padding: 10px;
-
+  position: relative;
+  /* padding: 10px; */
 }
 #menu li a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
   padding: 0;
-  padding-left: 15%;
-  padding-right: 15%;
-  /* border: 2px solid red; */
-  /* transition: all 0.2s ease-in-out; */
-
+  /* padding-left: 15%;
+  padding-right: 15%; */
 }
-#menu li a:hover {
-  transform: scale(1);
-  
-}
-#sub_menu_div{
-  padding: 0;
-  padding-left: 15%;
-  padding-right: 15%;
-  border: 2px solid red;
-
-}
-#menu ul ul {
-  position: absolute;
-  top: 100%;
-  left: 85%;
-  right: auto;
-  min-width: auto;
-  background-color: #333;
-  display: none;
-  white-space: nowrap; /* Empêche le texte de revenir à la ligne */
-  padding: 0; /* Supprime le padding pour éviter les espaces inutiles */
-  margin-top: 0; /* Supprime la marge supérieure pour aligner avec le lien parent */
-  /* border: 2px solid red; */
-  
-}
-#menu ul ul li {
-  /* width: 100%; */
-  float: none;
+#menu li {
   position: relative;
-
 }
-#menu ul ul a {
-  padding: 0;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  white-space: nowrap;
-
-}
-#menu ul ul a:hover {
-  background-color: #333;
-
-}
-#menu ul li:hover > ul {
+#menu li:hover #sub_menu {
   display: block;
   border-radius: 5px;
-
 }
+#sub_menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 0;
+  /* left: 85%; */
+  /* right: auto; */
+  min-width: auto;
+  white-space: nowrap;
+  /* padding: 0; */
+  /* margin-top: 0; */
+}
+#sub_menu li {
+  /* padding: 5px 0; */
+  float: none;
+  position: relative;
+  list-style: none;
+}
+#sub_menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 
 
 /*--------------------- Page d'accueil --------------*/
-.cadre_img_accueil 
-{
+.cadre_img_accueil {
   width: var(--wWindow);
   height: var(--hWindow);
   overflow: hidden; 
-  /* border: 2px solid red; */
-
-
+  transition: opacity 0.5s ease-in-out;
 }
-.img-accueil 
-{
+.cadre_img_accueil.visible {
+  opacity: 1;
+}
+.cadre_img_accueil.hidden {
+  opacity: 0;
+}
+.img-accueil {
   width: var(--wScreen);
   height: var(--hScreen);
   overflow: hidden;
@@ -157,21 +135,6 @@ main {
   height: 100%;
   object-fit: cover;
   background-color: #fff;
-/* 
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out; */
-}
-.cadre_img_accueil .img-accueil {
-  opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-.cadre_img_accueil .img-accueil.visible {
-  opacity: 1;
-  transform: scale(1);
-}
-.img-accueil.hidden {
-  opacity: 0;
 }
 #txt_img_accueil {
   position: absolute; /*place the text on the picture*/
@@ -184,63 +147,57 @@ main {
   text-align: center; /* Alignement du texte */
   font-family: "Ms_Madi";
   /* border: 2px solid red; */
-
 }
 #txt_img_accueil::first-letter {
   font-size: 30vw;
   /* font-family: ""; */
-
 }
-/* section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 
-} */
-html {
+
+
+
+/* html {
   scroll-snap-type: y mandatory;
 
-}
-#on_cadre_img_accueil{
+} */
+
+
+
+
+
+/* #on_cadre_img_accueil{
   position: absolute;
   top: var(--hWindow);
   left: 0;
   margin-top: 35px;
   border: 2px solid red;
 
-}
+} */
 
 
 /*--------------------- footer ----------------------*/
-footer
-{
+footer{
   position: absolute;
   text-align: center;
   width: 100%;
   background-color: #333;
   color: #fff;
-  z-index: 1;
+  z-index: 0;
   height: auto;
-  /* border: 2px solid red; */
-
 }
-#div_footer
-{
+#div_footer{
   padding-top: 4px;
-
 }
-#txt_footer
-{
+#txt_footer{
   color: #fff;
   font-size: 9.5pt;
   margin: 0px;
   padding: 2px;
-
 }
 #footer.sticky {
   position: fixed;
   bottom: 0;
   z-index: 1;
-
 }
 
 

@@ -1,4 +1,4 @@
-//fonction qui donne la résolution (taille) de l'écran
+//getting the screen size
 function getResolution() 
 {
   const realWidth = window.screen.width * window.devicePixelRatio;
@@ -12,7 +12,7 @@ function getResolution()
   
 };
 
-//récupération de la taille de la fenêtre
+//getting the window's size
 function getWindowSize() 
 {
 	console.log("The window's size is :" + window.innerWidth + " x " + window.innerHeight + " pixels");
@@ -23,11 +23,26 @@ function getWindowSize()
 
 };
 
-//scroll de la première page
-// function scroll() {
-//   window.location.href = "#menu-container"; //Your next section
-  
-// }
+//sticky becoming of the menu
+function stickyMenu() {
+  var menu = document.querySelector("#menu");
+  var menuPosition = menu.getBoundingClientRect().top;
+
+  var windowHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hScreen'));
+
+  var image = document.querySelector(".cadre_img_accueil");
+  var imagePosition = image.getBoundingClientRect().bottom;
+
+  if (windowHeight > menuPosition && imagePosition < 0) {
+    menu.classList.add("sticky");
+    menu.classList.remove("scrolly");
+  } else {
+    menu.classList.remove("sticky");
+    menu.classList.add("scrolly");
+  }
+};
+
+
 
 
 //---------------------- EXECUTABLES  ------------------------
@@ -39,17 +54,24 @@ function getWindowSize()
 
 //disparition de l'image en un scroll
 window.addEventListener("scroll", function() {
-		var image = document.querySelector(".cadre_img_accueil .img-accueil");
+		var image = document.querySelector(".cadre_img_accueil");
 		var imagePosition = image.getBoundingClientRect().top;
-		var windowHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hScreen'));
+		
     
-		if (imagePosition < windowHeight && window.scrollY > 0) {
-				image.classList.add("hidden");
-        image.classList.remove("visible");
-		} else {
-				image.classList.remove("hidden");
-        image.classList.add("visible");
-		}
+
+   
+    
+		// if (imagePosition < windowHeight && window.scrollY > 0) {
+		// 		image.classList.add("hidden");
+    //     image.classList.remove("visible");
+    //     if(menuPosition < windowHeight )
+    //     {
+    //       window.location.href = "#menu";
+    //     }
+		// } else {
+		// 		image.classList.remove("hidden");
+    //     image.classList.add("visible");
+		// }
     // if (imagePosition > windowHeight && window.scrollY < 0)
 });
 
@@ -74,5 +96,5 @@ window.onresize = function()
 //utilisation des fonctions lors de l'event onscroll
 window.onscroll = function()
 {
-  // scroll();
+  stickyMenu();
 }
