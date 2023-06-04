@@ -118,12 +118,11 @@ main {
   width: var(--wWindow);
   height: var(--hWindow);
   overflow: hidden; 
-  transition: opacity 0.5s ease-in-out;
 }
-.cadre_img_accueil.visible {
+.visible {
   opacity: 1;
 }
-.cadre_img_accueil.hidden {
+.hidden {
   opacity: 0;
 }
 .img-accueil {
@@ -153,8 +152,11 @@ main {
   /* font-family: ""; */
 }
 
+/*--------------------- Main --------------*/
 
-
+#content{
+  position: absolute;
+}
 
 /* html {
   scroll-snap-type: y mandatory;
